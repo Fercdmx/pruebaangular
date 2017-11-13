@@ -1,0 +1,15 @@
+
+<form (ngSubmit)="mostrar()" class="form-inline" #f="ngForm">
+  <label class="sr-only" >Name</label>
+  <input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" id="Name" placeholder="Nombre" [(ngModel)]="ejemplo.nombre" #name ="ngModel" name="nombre">
+
+  <label class="sr-only" >Nombre</label>
+  <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+    <div class="input-group-addon">@</div>
+    <input type="text" class="form-control" id="Domi" placeholder="Dominio" [(ngModel)]="ejemplo.dominio" #name ="ngModel" name="dominio">
+  </div>
+
+
+
+  <button class="btn btn-primary">enviar</button>
+</form>
